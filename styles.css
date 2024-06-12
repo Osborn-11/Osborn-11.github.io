@@ -1,0 +1,98 @@
+/* Basic Styles */  
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-image: url('2.jpg');  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    min-height: 100vh;  
+}  
+  
+/* Fixed Header */  
+.fixed-header {  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100px;  
+    background-image: url('1.jpg');  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    z-index: 1000;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+}  
+  
+/* Resume Section */  
+/* Resume Section */    
+.resume-section {    
+    max-width: 800px;    
+    padding: 20px;    
+    background-color: #fff;    
+    margin-top: 120px; /* 当fixed header在时 */  
+    display: flex;     /* 添加Flexbox */  
+    flex-direction: column; /* 如果需要的话，显式设置flex方向 */  
+    justify-content: center; /* 垂直居中 */  
+    align-items: center;     /* 水平居中（如果内容不是块级元素，可能需要额外的样式） */  
+    text-align: left;        /* 如果内容需要左对齐，可以在内部元素上设置 */  
+}
+  
+/* List Styles */  
+.resume-section ul {  
+    list-style-type: disc;  
+    padding-left: 20px;  
+}  
+  
+/* Table Styles */  
+.school-table {  
+    width: 100%;  
+    border-collapse: collapse;  
+    margin-top: 20px;  
+}  
+  
+.school-table th,  
+.school-table td {  
+    border: 1px solid #ddd;  
+    padding: 8px;  
+    text-align: left;  
+}  
+  
+.school-table th {  
+    background-color: #f2f2f2;  
+}  
+  
+/* Link Styles & Animations */  
+.animated-link {  
+    color: #f12525;  
+    text-decoration: none;  
+    transition: all 0.3s ease;  
+}  
+  
+.animated-link:hover {  
+    color: rgb(19, 3, 243);  
+    text-decoration: underline;  
+    transform: scale(1.05);  
+}  
+  
+/* Responsive Design */  
+@media (max-width: 600px) {  
+    .fixed-header {  
+        position: relative;  
+        height: auto;  
+    }  
+  
+    .resume-section {  
+        margin-top: 0;  
+    }  
+  
+    /* Add more responsive styles here if needed */  
+}  
+  
+/* Additional Styles (e.g., special class 'pink') */  
+.pink {  
+    color: #000000;  
+}
